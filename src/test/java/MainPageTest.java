@@ -6,7 +6,7 @@ public class MainPageTest {
 
     @Test
     public void openChromePage() {
-        System.out.println("Selenium test has been started!");
+        System.out.println(" Selenium test has been started!");
         WebDriver driver = new BrowserService("chrome").getDriver();
         driver.get("http://google.com");
 
