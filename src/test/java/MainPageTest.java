@@ -18,11 +18,11 @@ public class MainPageTest {
     @Test
     public void openFirefoxPage() {
         System.out.println("Selenium test has been started!");
-        WebDriver driver = new BrowserService("firefox").getDriver();
+        WebDriver driver = new BrowserService("chrome").getDriver();
         driver.get("http://google.com");
 
         System.out.println(driver.getTitle());
-        Assert.assertEquals(driver.getTitle(), "Google1");
+        Assert.assertEquals(driver.getTitle(), "Google");
         driver.close();
     }
 }
